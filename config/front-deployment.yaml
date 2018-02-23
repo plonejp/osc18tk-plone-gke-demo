@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    name: front-node
+  name: front-node
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        name: front-node
+    spec:
+      containers:
+      - name: front-node
+        image: gcr.io/osc-plone-test-rel/osc-front:v1.1
+        ports:
+        - containerPort: 80
