@@ -6,6 +6,14 @@ OSC 2018 Tokyo Spring で行ったPloneのGKE(Kubernetes)デモ
 
 以下は、GKEのWebシェルで実行可能
 
+## レポジトリのダウンロード
+
+```
+$ git clone https://github.com/plonejp/osc18tk-plone-gke-demo.git
+$ cd osc18tk-plone-gke-demo
+$ git pull
+```
+
 ## DBパスワードの設定
 
 ```
@@ -17,10 +25,6 @@ password <YOUR-DB-PASSWORD>
 ## コンテナ作成
 
 ```
-$ git clone https://github.com/plonejp/osc18tk-plone-gke-demo.git
-$ cd osc18tk-plone-gke-demo
-$ git pull
-
 $ export PROJECT_ID="osc-plone-test-rel"
 $ export VERSION_NO="v2.0"
 
@@ -71,13 +75,17 @@ $ kubectl get pods
 以下は、GKEのWebシェルで実行可能
 
 
-## コンテナ作成
+## レポジトリのダウンロード
 
 ```
 $ git clone https://bitbucket.org/cmscom/plone-gke-demo.git
 $ cd plone-gke-demo
 $ git pull
+```
 
+## コンテナ作成
+
+```
 $ export PROJECT_ID="osc-plone-test-rel"
 $ export FRONT_VERSION_NO="v1.1"
 
